@@ -1,0 +1,5 @@
+Assets
+------
+icon.txt - Text placeholder ("disini tempat ikon nya"); replace with your own icon.png and adjust project settings as needed.
+map.txt - Text placeholder ("disini tempat map nya"); replace with your own map.png. Gradient fallback renders when map.png is absent.
+Runtime gradient map - Generated in-engine at runtime; no external asset required when no custom map is present.

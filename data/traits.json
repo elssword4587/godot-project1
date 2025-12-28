@@ -1,0 +1,542 @@
+[
+  {
+    "id": "brave",
+    "name": "Brave Adventurer",
+    "description": "Trait Brave adventurer",
+    "mods": {
+      "atk": -1,
+      "def": 3,
+      "speed": 1.0380501765977046,
+      "hunger_mult": 1.08,
+      "mood": 0
+    },
+    "behavior": {
+      "refusal_chance": 0.09,
+      "shop_bias": "balanced",
+      "craft_bias": "material",
+      "luck": 0.92
+    }
+  },
+  {
+    "id": "coward",
+    "name": "Easily Frightened",
+    "description": "Trait Easily frightened",
+    "mods": {
+      "atk": 4,
+      "def": 4,
+      "speed": 1.0835474010937376,
+      "hunger_mult": 0.85,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.17,
+      "shop_bias": "frugal",
+      "craft_bias": "weapon",
+      "luck": 1.02
+    }
+  },
+  {
+    "id": "stubborn",
+    "name": "Often Refuses Orders",
+    "description": "Trait Often refuses orders",
+    "mods": {
+      "atk": 1,
+      "def": 2,
+      "speed": 0.8522222143248118,
+      "hunger_mult": 1.08,
+      "mood": 1
+    },
+    "behavior": {
+      "refusal_chance": 0.09,
+      "shop_bias": "frugal",
+      "craft_bias": "weapon",
+      "luck": 0.9
+    }
+  },
+  {
+    "id": "disciplined",
+    "name": "Keeps Routines",
+    "description": "Trait Keeps routines",
+    "mods": {
+      "atk": 3,
+      "def": 4,
+      "speed": 1.1780363977941213,
+      "hunger_mult": 1.1,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.17,
+      "shop_bias": "greedy",
+      "craft_bias": "potion",
+      "luck": 0.88
+    }
+  },
+  {
+    "id": "glutton",
+    "name": "Eats More Often",
+    "description": "Trait Eats more often",
+    "mods": {
+      "atk": 3,
+      "def": 3,
+      "speed": 1.2367169963076758,
+      "hunger_mult": 1.16,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.2,
+      "shop_bias": "frugal",
+      "craft_bias": "weapon",
+      "luck": 1.12
+    }
+  },
+  {
+    "id": "frugal",
+    "name": "Spends Sparingly",
+    "description": "Trait Spends sparingly",
+    "mods": {
+      "atk": 0,
+      "def": 0,
+      "speed": 0.9421503044236739,
+      "hunger_mult": 0.89,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.22,
+      "shop_bias": "frugal",
+      "craft_bias": "potion",
+      "luck": 1.1
+    }
+  },
+  {
+    "id": "greedy",
+    "name": "Loves Treasure",
+    "description": "Trait Loves treasure",
+    "mods": {
+      "atk": 0,
+      "def": 5,
+      "speed": 1.2066402444439328,
+      "hunger_mult": 0.98,
+      "mood": 1
+    },
+    "behavior": {
+      "refusal_chance": 0.14,
+      "shop_bias": "greedy",
+      "craft_bias": "potion",
+      "luck": 0.86
+    }
+  },
+  {
+    "id": "lucky",
+    "name": "Fortune Favors",
+    "description": "Trait Fortune favors",
+    "mods": {
+      "atk": 1,
+      "def": 4,
+      "speed": 1.2054648853449428,
+      "hunger_mult": 0.95,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.25,
+      "shop_bias": "greedy",
+      "craft_bias": "armor",
+      "luck": 0.97
+    }
+  },
+  {
+    "id": "unlucky",
+    "name": "Bad Omens",
+    "description": "Trait Bad omens",
+    "mods": {
+      "atk": 5,
+      "def": 5,
+      "speed": 1.2341579802248432,
+      "hunger_mult": 1.03,
+      "mood": -2
+    },
+    "behavior": {
+      "refusal_chance": 0.05,
+      "shop_bias": "greedy",
+      "craft_bias": "potion",
+      "luck": 0.83
+    }
+  },
+  {
+    "id": "artificer",
+    "name": "Craft Focus",
+    "description": "Trait Craft focus",
+    "mods": {
+      "atk": 1,
+      "def": 5,
+      "speed": 0.9237936212658737,
+      "hunger_mult": 0.89,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.08,
+      "shop_bias": "balanced",
+      "craft_bias": "material",
+      "luck": 1.02
+    }
+  },
+  {
+    "id": "clumsy",
+    "name": "Trips Often",
+    "description": "Trait Trips often",
+    "mods": {
+      "atk": 3,
+      "def": 2,
+      "speed": 0.8392832058527273,
+      "hunger_mult": 1.11,
+      "mood": 0
+    },
+    "behavior": {
+      "refusal_chance": 0.22,
+      "shop_bias": "frugal",
+      "craft_bias": "armor",
+      "luck": 1.07
+    }
+  },
+  {
+    "id": "swift",
+    "name": "Moves Quickly",
+    "description": "Trait Moves quickly",
+    "mods": {
+      "atk": -1,
+      "def": -1,
+      "speed": 1.2566804761684551,
+      "hunger_mult": 0.98,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.18,
+      "shop_bias": "balanced",
+      "craft_bias": "armor",
+      "luck": 0.85
+    }
+  },
+  {
+    "id": "sluggish",
+    "name": "Slow Pace",
+    "description": "Trait Slow pace",
+    "mods": {
+      "atk": 2,
+      "def": 0,
+      "speed": 0.8878733063894335,
+      "hunger_mult": 1.01,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.02,
+      "shop_bias": "greedy",
+      "craft_bias": "armor",
+      "luck": 0.81
+    }
+  },
+  {
+    "id": "pious",
+    "name": "Values Blessings",
+    "description": "Trait Values blessings",
+    "mods": {
+      "atk": 2,
+      "def": 4,
+      "speed": 0.9944990438878636,
+      "hunger_mult": 0.96,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.22,
+      "shop_bias": "balanced",
+      "craft_bias": "weapon",
+      "luck": 1.07
+    }
+  },
+  {
+    "id": "wrathful",
+    "name": "Aggressive Nature",
+    "description": "Trait Aggressive nature",
+    "mods": {
+      "atk": 0,
+      "def": -2,
+      "speed": 1.128633735596403,
+      "hunger_mult": 0.95,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.04,
+      "shop_bias": "frugal",
+      "craft_bias": "armor",
+      "luck": 0.97
+    }
+  },
+  {
+    "id": "serene",
+    "name": "Calm Mind",
+    "description": "Trait Calm mind",
+    "mods": {
+      "atk": 4,
+      "def": 5,
+      "speed": 0.8024093377041956,
+      "hunger_mult": 1.19,
+      "mood": 1
+    },
+    "behavior": {
+      "refusal_chance": 0.06,
+      "shop_bias": "frugal",
+      "craft_bias": "material",
+      "luck": 1.1
+    }
+  },
+  {
+    "id": "scholar",
+    "name": "Learns Fast",
+    "description": "Trait Learns fast",
+    "mods": {
+      "atk": 2,
+      "def": 3,
+      "speed": 1.1309712978822295,
+      "hunger_mult": 0.99,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.22,
+      "shop_bias": "frugal",
+      "craft_bias": "weapon",
+      "luck": 0.91
+    }
+  },
+  {
+    "id": "forgetful",
+    "name": "Learns Slowly",
+    "description": "Trait Learns slowly",
+    "mods": {
+      "atk": 5,
+      "def": -2,
+      "speed": 0.9305886834981668,
+      "hunger_mult": 1.1,
+      "mood": 4
+    },
+    "behavior": {
+      "refusal_chance": 0.24,
+      "shop_bias": "greedy",
+      "craft_bias": "weapon",
+      "luck": 0.99
+    }
+  },
+  {
+    "id": "resilient",
+    "name": "Takes Hits Well",
+    "description": "Trait Takes hits well",
+    "mods": {
+      "atk": 2,
+      "def": 3,
+      "speed": 1.0846971315196587,
+      "hunger_mult": 1.18,
+      "mood": -2
+    },
+    "behavior": {
+      "refusal_chance": 0.18,
+      "shop_bias": "frugal",
+      "craft_bias": "armor",
+      "luck": 1.1
+    }
+  },
+  {
+    "id": "frail",
+    "name": "Fragile Body",
+    "description": "Trait Fragile body",
+    "mods": {
+      "atk": 4,
+      "def": 2,
+      "speed": 1.0970428771963345,
+      "hunger_mult": 0.87,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.28,
+      "shop_bias": "balanced",
+      "craft_bias": "armor",
+      "luck": 0.89
+    }
+  },
+  {
+    "id": "forager",
+    "name": "Better Gathering",
+    "description": "Trait Better gathering",
+    "mods": {
+      "atk": 4,
+      "def": 1,
+      "speed": 1.2653183301952065,
+      "hunger_mult": 1.05,
+      "mood": 3
+    },
+    "behavior": {
+      "refusal_chance": 0.09,
+      "shop_bias": "balanced",
+      "craft_bias": "armor",
+      "luck": 1.18
+    }
+  },
+  {
+    "id": "miner",
+    "name": "Better Mining",
+    "description": "Trait Better mining",
+    "mods": {
+      "atk": 1,
+      "def": -1,
+      "speed": 0.8395016590432984,
+      "hunger_mult": 1.26,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.19,
+      "shop_bias": "greedy",
+      "craft_bias": "weapon",
+      "luck": 0.89
+    }
+  },
+  {
+    "id": "hunter",
+    "name": "Better Hunting",
+    "description": "Trait Better hunting",
+    "mods": {
+      "atk": 5,
+      "def": 4,
+      "speed": 1.051603643930843,
+      "hunger_mult": 0.98,
+      "mood": 2
+    },
+    "behavior": {
+      "refusal_chance": 0.13,
+      "shop_bias": "greedy",
+      "craft_bias": "potion",
+      "luck": 0.81
+    }
+  },
+  {
+    "id": "trader",
+    "name": "Better Prices",
+    "description": "Trait Better prices",
+    "mods": {
+      "atk": 2,
+      "def": -2,
+      "speed": 0.9070693113050396,
+      "hunger_mult": 0.89,
+      "mood": -2
+    },
+    "behavior": {
+      "refusal_chance": 0.23,
+      "shop_bias": "balanced",
+      "craft_bias": "armor",
+      "luck": 0.89
+    }
+  },
+  {
+    "id": "gourmet",
+    "name": "Prefers Good Food",
+    "description": "Trait Prefers good food",
+    "mods": {
+      "atk": 1,
+      "def": 3,
+      "speed": 0.8872586872747941,
+      "hunger_mult": 0.95,
+      "mood": -2
+    },
+    "behavior": {
+      "refusal_chance": 0.1,
+      "shop_bias": "frugal",
+      "craft_bias": "material",
+      "luck": 1.08
+    }
+  },
+  {
+    "id": "ascetic",
+    "name": "Low Needs",
+    "description": "Trait Low needs",
+    "mods": {
+      "atk": 4,
+      "def": 5,
+      "speed": 0.9334932122165046,
+      "hunger_mult": 0.87,
+      "mood": 1
+    },
+    "behavior": {
+      "refusal_chance": 0.05,
+      "shop_bias": "frugal",
+      "craft_bias": "potion",
+      "luck": 1.06
+    }
+  },
+  {
+    "id": "night_owl",
+    "name": "Rest Later",
+    "description": "Trait Rest later",
+    "mods": {
+      "atk": -2,
+      "def": 2,
+      "speed": 1.023377775865259,
+      "hunger_mult": 1.09,
+      "mood": 1
+    },
+    "behavior": {
+      "refusal_chance": 0.21,
+      "shop_bias": "frugal",
+      "craft_bias": "material",
+      "luck": 1.03
+    }
+  },
+  {
+    "id": "early_riser",
+    "name": "Rest Early",
+    "description": "Trait Rest early",
+    "mods": {
+      "atk": 3,
+      "def": -1,
+      "speed": 0.9025904820370217,
+      "hunger_mult": 1.07,
+      "mood": 0
+    },
+    "behavior": {
+      "refusal_chance": 0.1,
+      "shop_bias": "greedy",
+      "craft_bias": "weapon",
+      "luck": 1.09
+    }
+  },
+  {
+    "id": "craftsman",
+    "name": "Craft Success Up",
+    "description": "Trait Craft success up",
+    "mods": {
+      "atk": 4,
+      "def": 5,
+      "speed": 0.9185148978194674,
+      "hunger_mult": 1.23,
+      "mood": 2
+    },
+    "behavior": {
+      "refusal_chance": 0.07,
+      "shop_bias": "balanced",
+      "craft_bias": "weapon",
+      "luck": 0.98
+    }
+  },
+  {
+    "id": "jinxed",
+    "name": "Craft Fails Often",
+    "description": "Trait Craft fails often",
+    "mods": {
+      "atk": 1,
+      "def": 3,
+      "speed": 1.1357061631772356,
+      "hunger_mult": 1.2,
+      "mood": -1
+    },
+    "behavior": {
+      "refusal_chance": 0.22,
+      "shop_bias": "balanced",
+      "craft_bias": "material",
+      "luck": 1.09
+    }
+  }
+]

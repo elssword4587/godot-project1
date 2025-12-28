@@ -1,0 +1,148 @@
+[
+  {
+    "id": "lustel",
+    "name": "Lustel",
+    "type": "city",
+    "pos": [
+      0.5,
+      0.45
+    ],
+    "npcs": [
+      "weaponsmith",
+      "armorer",
+      "alchemist",
+      "inn",
+      "general_store",
+      "stable",
+      "blacksmith",
+      "quest_guild"
+    ]
+  },
+  {
+    "id": "tarish",
+    "name": "Tarish",
+    "type": "city",
+    "pos": [
+      0.2,
+      0.2
+    ],
+    "npcs": [
+      "weaponsmith",
+      "armorer",
+      "alchemist",
+      "inn",
+      "general_store",
+      "stable",
+      "blacksmith",
+      "quest_guild"
+    ]
+  },
+  {
+    "id": "turan",
+    "name": "Turan",
+    "type": "city",
+    "pos": [
+      0.8,
+      0.15
+    ],
+    "npcs": [
+      "weaponsmith",
+      "armorer",
+      "alchemist",
+      "inn",
+      "general_store",
+      "stable",
+      "blacksmith",
+      "quest_guild"
+    ]
+  },
+  {
+    "id": "grodon",
+    "name": "Grodon Mine",
+    "type": "mine",
+    "pos": [
+      0.65,
+      0.6
+    ],
+    "npcs": []
+  },
+  {
+    "id": "hathor",
+    "name": "Hathor Desert",
+    "type": "ruins",
+    "pos": [
+      0.35,
+      0.85
+    ],
+    "npcs": []
+  },
+  {
+    "id": "astarte",
+    "name": "Astarte Wilds",
+    "type": "forest",
+    "pos": [
+      0.25,
+      0.6
+    ],
+    "npcs": []
+  },
+  {
+    "id": "rodaphite",
+    "name": "Rodaphite Frontier",
+    "type": "wild",
+    "pos": [
+      0.8,
+      0.8
+    ],
+    "npcs": []
+  },
+  {
+    "id": "krastim",
+    "name": "Krastim Peaks",
+    "type": "mine",
+    "pos": [
+      0.6,
+      0.2
+    ],
+    "npcs": []
+  },
+  {
+    "id": "anas",
+    "name": "Anas Marsh",
+    "type": "wild",
+    "pos": [
+      0.55,
+      0.75
+    ],
+    "npcs": []
+  },
+  {
+    "id": "taria",
+    "name": "Taria Grove",
+    "type": "forest",
+    "pos": [
+      0.4,
+      0.35
+    ],
+    "npcs": []
+  },
+  {
+    "id": "mesken",
+    "name": "Mesken Port",
+    "type": "city",
+    "pos": [
+      0.6,
+      0.1
+    ],
+    "npcs": [
+      "weaponsmith",
+      "armorer",
+      "alchemist",
+      "inn",
+      "general_store",
+      "stable",
+      "blacksmith",
+      "quest_guild"
+    ]
+  }
+]

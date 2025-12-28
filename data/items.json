@@ -1,0 +1,1603 @@
+[
+  {
+    "id": "item_1",
+    "name": "Item 1",
+    "type": "mount",
+    "price": 137,
+    "req_level": 9,
+    "stats": {
+      "atk": 10,
+      "def": 6,
+      "hp": 14,
+      "speed": 1.07
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.17
+  },
+  {
+    "id": "item_2",
+    "name": "Item 2",
+    "type": "weapon",
+    "price": 72,
+    "req_level": 1,
+    "stats": {
+      "atk": 11,
+      "def": 4,
+      "hp": 26,
+      "speed": 0.93
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ]
+  },
+  {
+    "id": "item_3",
+    "name": "Item 3",
+    "type": "mount",
+    "price": 66,
+    "req_level": 6,
+    "stats": {
+      "atk": 5,
+      "def": 10,
+      "hp": 30,
+      "speed": 0.99
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.12
+  },
+  {
+    "id": "item_4",
+    "name": "Item 4",
+    "type": "material",
+    "price": 130,
+    "req_level": 2,
+    "stats": {
+      "atk": 1,
+      "def": 6,
+      "hp": 28,
+      "speed": 1.04
+    },
+    "tags": [
+      "material",
+      "common"
+    ]
+  },
+  {
+    "id": "item_5",
+    "name": "Item 5",
+    "type": "consumable",
+    "price": 46,
+    "req_level": 3,
+    "stats": {
+      "atk": 0,
+      "def": 11,
+      "hp": 9,
+      "speed": 1.12
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -10,
+      "heal": 9,
+      "stamina": 11
+    }
+  },
+  {
+    "id": "item_6",
+    "name": "Item 6",
+    "type": "potion",
+    "price": 72,
+    "req_level": 4,
+    "stats": {
+      "atk": 6,
+      "def": 0,
+      "hp": 21,
+      "speed": 1.18
+    },
+    "tags": [
+      "potion",
+      "common"
+    ],
+    "effect": {
+      "hunger": -14,
+      "heal": 8,
+      "stamina": 9
+    }
+  },
+  {
+    "id": "item_7",
+    "name": "Item 7",
+    "type": "shield",
+    "price": 88,
+    "req_level": 5,
+    "stats": {
+      "atk": 2,
+      "def": 11,
+      "hp": 24,
+      "speed": 1.05
+    },
+    "tags": [
+      "shield",
+      "uncommon"
+    ]
+  },
+  {
+    "id": "item_8",
+    "name": "Item 8",
+    "type": "shield",
+    "price": 106,
+    "req_level": 7,
+    "stats": {
+      "atk": 5,
+      "def": 2,
+      "hp": 16,
+      "speed": 0.97
+    },
+    "tags": [
+      "shield",
+      "common"
+    ]
+  },
+  {
+    "id": "item_9",
+    "name": "Item 9",
+    "type": "material",
+    "price": 159,
+    "req_level": 7,
+    "stats": {
+      "atk": 5,
+      "def": 12,
+      "hp": 4,
+      "speed": 1.17
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ]
+  },
+  {
+    "id": "item_10",
+    "name": "Item 10",
+    "type": "consumable",
+    "price": 58,
+    "req_level": 1,
+    "stats": {
+      "atk": 7,
+      "def": 9,
+      "hp": 5,
+      "speed": 1.02
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -11,
+      "heal": 13,
+      "stamina": 7
+    }
+  },
+  {
+    "id": "item_11",
+    "name": "Item 11",
+    "type": "mount",
+    "price": 21,
+    "req_level": 6,
+    "stats": {
+      "atk": 11,
+      "def": 0,
+      "hp": 20,
+      "speed": 1.19
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.42
+  },
+  {
+    "id": "item_12",
+    "name": "Item 12",
+    "type": "mount",
+    "price": 195,
+    "req_level": 2,
+    "stats": {
+      "atk": 1,
+      "def": 10,
+      "hp": 16,
+      "speed": 1.08
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.13
+  },
+  {
+    "id": "item_13",
+    "name": "Item 13",
+    "type": "mount",
+    "price": 30,
+    "req_level": 9,
+    "stats": {
+      "atk": 1,
+      "def": 1,
+      "hp": 18,
+      "speed": 1.12
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.36
+  },
+  {
+    "id": "item_14",
+    "name": "Item 14",
+    "type": "weapon",
+    "price": 29,
+    "req_level": 7,
+    "stats": {
+      "atk": 0,
+      "def": 9,
+      "hp": 23,
+      "speed": 0.98
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_5": 2,
+      "item_16": 1
+    }
+  },
+  {
+    "id": "item_15",
+    "name": "Item 15",
+    "type": "mount",
+    "price": 47,
+    "req_level": 5,
+    "stats": {
+      "atk": 9,
+      "def": 12,
+      "hp": 11,
+      "speed": 0.93
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.17
+  },
+  {
+    "id": "item_16",
+    "name": "Item 16",
+    "type": "material",
+    "price": 195,
+    "req_level": 1,
+    "stats": {
+      "atk": 7,
+      "def": 11,
+      "hp": 3,
+      "speed": 0.91
+    },
+    "tags": [
+      "material",
+      "common"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_17",
+    "name": "Item 17",
+    "type": "material",
+    "price": 190,
+    "req_level": 5,
+    "stats": {
+      "atk": 1,
+      "def": 12,
+      "hp": 2,
+      "speed": 0.9
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_18",
+    "name": "Item 18",
+    "type": "mount",
+    "price": 122,
+    "req_level": 4,
+    "stats": {
+      "atk": 4,
+      "def": 1,
+      "hp": 29,
+      "speed": 0.97
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.46
+  },
+  {
+    "id": "item_19",
+    "name": "Item 19",
+    "type": "material",
+    "price": 164,
+    "req_level": 3,
+    "stats": {
+      "atk": 8,
+      "def": 2,
+      "hp": 13,
+      "speed": 1.02
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_20",
+    "name": "Item 20",
+    "type": "weapon",
+    "price": 140,
+    "req_level": 5,
+    "stats": {
+      "atk": 2,
+      "def": 10,
+      "hp": 19,
+      "speed": 1.04
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_1": 2,
+      "item_7": 1
+    }
+  },
+  {
+    "id": "item_21",
+    "name": "Item 21",
+    "type": "weapon",
+    "price": 56,
+    "req_level": 1,
+    "stats": {
+      "atk": 1,
+      "def": 3,
+      "hp": 25,
+      "speed": 1.18
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_2": 2,
+      "item_8": 1
+    }
+  },
+  {
+    "id": "item_22",
+    "name": "Item 22",
+    "type": "consumable",
+    "price": 154,
+    "req_level": 4,
+    "stats": {
+      "atk": 5,
+      "def": 5,
+      "hp": 28,
+      "speed": 0.92
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -15,
+      "heal": 5,
+      "stamina": 3
+    }
+  },
+  {
+    "id": "item_23",
+    "name": "Item 23",
+    "type": "weapon",
+    "price": 115,
+    "req_level": 6,
+    "stats": {
+      "atk": 8,
+      "def": 1,
+      "hp": 27,
+      "speed": 0.91
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_4": 2,
+      "item_10": 1
+    }
+  },
+  {
+    "id": "item_24",
+    "name": "Item 24",
+    "type": "material",
+    "price": 156,
+    "req_level": 9,
+    "stats": {
+      "atk": 1,
+      "def": 8,
+      "hp": 11,
+      "speed": 1.09
+    },
+    "tags": [
+      "material",
+      "common"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_25",
+    "name": "Item 25",
+    "type": "consumable",
+    "price": 120,
+    "req_level": 6,
+    "stats": {
+      "atk": 9,
+      "def": 5,
+      "hp": 2,
+      "speed": 1.1
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -12,
+      "heal": 16,
+      "stamina": 9
+    }
+  },
+  {
+    "id": "item_26",
+    "name": "Item 26",
+    "type": "mount",
+    "price": 88,
+    "req_level": 6,
+    "stats": {
+      "atk": 1,
+      "def": 6,
+      "hp": 6,
+      "speed": 0.93
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.38
+  },
+  {
+    "id": "item_27",
+    "name": "Item 27",
+    "type": "material",
+    "price": 158,
+    "req_level": 10,
+    "stats": {
+      "atk": 1,
+      "def": 10,
+      "hp": 13,
+      "speed": 1.1
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_28",
+    "name": "Item 28",
+    "type": "consumable",
+    "price": 192,
+    "req_level": 4,
+    "stats": {
+      "atk": 0,
+      "def": 5,
+      "hp": 26,
+      "speed": 1.03
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -5,
+      "heal": 16,
+      "stamina": 2
+    }
+  },
+  {
+    "id": "item_29",
+    "name": "Item 29",
+    "type": "consumable",
+    "price": 78,
+    "req_level": 2,
+    "stats": {
+      "atk": 7,
+      "def": 3,
+      "hp": 9,
+      "speed": 1.16
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -7,
+      "heal": 1,
+      "stamina": 3
+    }
+  },
+  {
+    "id": "item_30",
+    "name": "Item 30",
+    "type": "mount",
+    "price": 56,
+    "req_level": 3,
+    "stats": {
+      "atk": 2,
+      "def": 11,
+      "hp": 1,
+      "speed": 1.01
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.41
+  },
+  {
+    "id": "item_31",
+    "name": "Item 31",
+    "type": "mount",
+    "price": 58,
+    "req_level": 7,
+    "stats": {
+      "atk": 0,
+      "def": 1,
+      "hp": 2,
+      "speed": 1.05
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.22
+  },
+  {
+    "id": "item_32",
+    "name": "Item 32",
+    "type": "mount",
+    "price": 170,
+    "req_level": 6,
+    "stats": {
+      "atk": 9,
+      "def": 0,
+      "hp": 1,
+      "speed": 0.94
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.29
+  },
+  {
+    "id": "item_33",
+    "name": "Item 33",
+    "type": "weapon",
+    "price": 38,
+    "req_level": 3,
+    "stats": {
+      "atk": 5,
+      "def": 9,
+      "hp": 1,
+      "speed": 1.11
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_4": 2,
+      "item_5": 1
+    }
+  },
+  {
+    "id": "item_34",
+    "name": "Item 34",
+    "type": "potion",
+    "price": 20,
+    "req_level": 3,
+    "stats": {
+      "atk": 11,
+      "def": 7,
+      "hp": 7,
+      "speed": 1.1
+    },
+    "tags": [
+      "potion",
+      "common"
+    ],
+    "effect": {
+      "hunger": -6,
+      "heal": 13,
+      "stamina": 7
+    }
+  },
+  {
+    "id": "item_35",
+    "name": "Item 35",
+    "type": "material",
+    "price": 122,
+    "req_level": 7,
+    "stats": {
+      "atk": 8,
+      "def": 10,
+      "hp": 29,
+      "speed": 1.12
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_36",
+    "name": "Item 36",
+    "type": "armor",
+    "price": 30,
+    "req_level": 8,
+    "stats": {
+      "atk": 12,
+      "def": 7,
+      "hp": 4,
+      "speed": 0.99
+    },
+    "tags": [
+      "armor",
+      "common"
+    ],
+    "recipe": {
+      "item_7": 2,
+      "item_8": 1
+    }
+  },
+  {
+    "id": "item_37",
+    "name": "Item 37",
+    "type": "consumable",
+    "price": 7,
+    "req_level": 7,
+    "stats": {
+      "atk": 1,
+      "def": 12,
+      "hp": 21,
+      "speed": 1.08
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -14,
+      "heal": 4,
+      "stamina": 14
+    }
+  },
+  {
+    "id": "item_38",
+    "name": "Item 38",
+    "type": "material",
+    "price": 42,
+    "req_level": 8,
+    "stats": {
+      "atk": 12,
+      "def": 6,
+      "hp": 14,
+      "speed": 1.11
+    },
+    "tags": [
+      "material",
+      "common"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_39",
+    "name": "Item 39",
+    "type": "armor",
+    "price": 85,
+    "req_level": 9,
+    "stats": {
+      "atk": 0,
+      "def": 10,
+      "hp": 18,
+      "speed": 0.9
+    },
+    "tags": [
+      "armor",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_10": 2,
+      "item_11": 1
+    }
+  },
+  {
+    "id": "item_40",
+    "name": "Item 40",
+    "type": "weapon",
+    "price": 170,
+    "req_level": 9,
+    "stats": {
+      "atk": 10,
+      "def": 2,
+      "hp": 26,
+      "speed": 1.07
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_1": 2,
+      "item_12": 1
+    }
+  },
+  {
+    "id": "item_41",
+    "name": "Item 41",
+    "type": "shield",
+    "price": 114,
+    "req_level": 4,
+    "stats": {
+      "atk": 0,
+      "def": 4,
+      "hp": 5,
+      "speed": 1.08
+    },
+    "tags": [
+      "shield",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_2": 2,
+      "item_13": 1
+    }
+  },
+  {
+    "id": "item_42",
+    "name": "Item 42",
+    "type": "weapon",
+    "price": 20,
+    "req_level": 6,
+    "stats": {
+      "atk": 12,
+      "def": 12,
+      "hp": 17,
+      "speed": 1.1
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_3": 2,
+      "item_14": 1
+    }
+  },
+  {
+    "id": "item_43",
+    "name": "Item 43",
+    "type": "shield",
+    "price": 77,
+    "req_level": 10,
+    "stats": {
+      "atk": 0,
+      "def": 6,
+      "hp": 8,
+      "speed": 1.0
+    },
+    "tags": [
+      "shield",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_4": 2,
+      "item_15": 1
+    }
+  },
+  {
+    "id": "item_44",
+    "name": "Item 44",
+    "type": "potion",
+    "price": 50,
+    "req_level": 8,
+    "stats": {
+      "atk": 2,
+      "def": 3,
+      "hp": 27,
+      "speed": 1.01
+    },
+    "tags": [
+      "potion",
+      "common"
+    ],
+    "effect": {
+      "hunger": -13,
+      "heal": 13,
+      "stamina": 8
+    }
+  },
+  {
+    "id": "item_45",
+    "name": "Item 45",
+    "type": "mount",
+    "price": 21,
+    "req_level": 6,
+    "stats": {
+      "atk": 8,
+      "def": 1,
+      "hp": 11,
+      "speed": 1.14
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.38
+  },
+  {
+    "id": "item_46",
+    "name": "Item 46",
+    "type": "shield",
+    "price": 163,
+    "req_level": 8,
+    "stats": {
+      "atk": 2,
+      "def": 7,
+      "hp": 11,
+      "speed": 1.04
+    },
+    "tags": [
+      "shield",
+      "common"
+    ],
+    "recipe": {
+      "item_7": 2,
+      "item_3": 1
+    }
+  },
+  {
+    "id": "item_47",
+    "name": "Item 47",
+    "type": "consumable",
+    "price": 117,
+    "req_level": 9,
+    "stats": {
+      "atk": 0,
+      "def": 8,
+      "hp": 22,
+      "speed": 0.95
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -5,
+      "heal": 6,
+      "stamina": 5
+    }
+  },
+  {
+    "id": "item_48",
+    "name": "Item 48",
+    "type": "armor",
+    "price": 92,
+    "req_level": 8,
+    "stats": {
+      "atk": 7,
+      "def": 12,
+      "hp": 10,
+      "speed": 0.97
+    },
+    "tags": [
+      "armor",
+      "common"
+    ],
+    "recipe": {
+      "item_9": 2,
+      "item_5": 1
+    }
+  },
+  {
+    "id": "item_49",
+    "name": "Item 49",
+    "type": "material",
+    "price": 18,
+    "req_level": 1,
+    "stats": {
+      "atk": 9,
+      "def": 10,
+      "hp": 30,
+      "speed": 0.98
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_50",
+    "name": "Item 50",
+    "type": "mount",
+    "price": 50,
+    "req_level": 1,
+    "stats": {
+      "atk": 9,
+      "def": 5,
+      "hp": 28,
+      "speed": 0.95
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.2
+  },
+  {
+    "id": "item_51",
+    "name": "Item 51",
+    "type": "mount",
+    "price": 36,
+    "req_level": 6,
+    "stats": {
+      "atk": 11,
+      "def": 6,
+      "hp": 6,
+      "speed": 0.91
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.48
+  },
+  {
+    "id": "item_52",
+    "name": "Item 52",
+    "type": "consumable",
+    "price": 189,
+    "req_level": 3,
+    "stats": {
+      "atk": 4,
+      "def": 3,
+      "hp": 0,
+      "speed": 1.12
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -11,
+      "heal": 16,
+      "stamina": 1
+    }
+  },
+  {
+    "id": "item_53",
+    "name": "Item 53",
+    "type": "potion",
+    "price": 76,
+    "req_level": 1,
+    "stats": {
+      "atk": 11,
+      "def": 0,
+      "hp": 5,
+      "speed": 1.11
+    },
+    "tags": [
+      "potion",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -12,
+      "heal": 19,
+      "stamina": 14
+    }
+  },
+  {
+    "id": "item_54",
+    "name": "Item 54",
+    "type": "armor",
+    "price": 137,
+    "req_level": 10,
+    "stats": {
+      "atk": 3,
+      "def": 12,
+      "hp": 5,
+      "speed": 1.14
+    },
+    "tags": [
+      "armor",
+      "common"
+    ],
+    "recipe": {
+      "item_5": 2,
+      "item_11": 1
+    }
+  },
+  {
+    "id": "item_55",
+    "name": "Item 55",
+    "type": "mount",
+    "price": 195,
+    "req_level": 10,
+    "stats": {
+      "atk": 10,
+      "def": 6,
+      "hp": 22,
+      "speed": 1.02
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.44
+  },
+  {
+    "id": "item_56",
+    "name": "Item 56",
+    "type": "weapon",
+    "price": 130,
+    "req_level": 5,
+    "stats": {
+      "atk": 1,
+      "def": 4,
+      "hp": 19,
+      "speed": 1.18
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_7": 2,
+      "item_13": 1
+    }
+  },
+  {
+    "id": "item_57",
+    "name": "Item 57",
+    "type": "consumable",
+    "price": 174,
+    "req_level": 3,
+    "stats": {
+      "atk": 12,
+      "def": 5,
+      "hp": 11,
+      "speed": 0.94
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -12,
+      "heal": 14,
+      "stamina": 11
+    }
+  },
+  {
+    "id": "item_58",
+    "name": "Item 58",
+    "type": "mount",
+    "price": 62,
+    "req_level": 10,
+    "stats": {
+      "atk": 6,
+      "def": 3,
+      "hp": 24,
+      "speed": 1.17
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.13
+  },
+  {
+    "id": "item_59",
+    "name": "Item 59",
+    "type": "consumable",
+    "price": 106,
+    "req_level": 9,
+    "stats": {
+      "atk": 7,
+      "def": 4,
+      "hp": 16,
+      "speed": 1.15
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -7,
+      "heal": 19,
+      "stamina": 7
+    }
+  },
+  {
+    "id": "item_60",
+    "name": "Item 60",
+    "type": "consumable",
+    "price": 169,
+    "req_level": 1,
+    "stats": {
+      "atk": 11,
+      "def": 8,
+      "hp": 25,
+      "speed": 1.02
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -11,
+      "heal": 17,
+      "stamina": 12
+    }
+  },
+  {
+    "id": "item_61",
+    "name": "Item 61",
+    "type": "armor",
+    "price": 46,
+    "req_level": 8,
+    "stats": {
+      "atk": 6,
+      "def": 5,
+      "hp": 15,
+      "speed": 0.99
+    },
+    "tags": [
+      "armor",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_2": 2,
+      "item_3": 1
+    }
+  },
+  {
+    "id": "item_62",
+    "name": "Item 62",
+    "type": "material",
+    "price": 43,
+    "req_level": 6,
+    "stats": {
+      "atk": 4,
+      "def": 7,
+      "hp": 15,
+      "speed": 1.04
+    },
+    "tags": [
+      "material",
+      "common"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_63",
+    "name": "Item 63",
+    "type": "consumable",
+    "price": 42,
+    "req_level": 1,
+    "stats": {
+      "atk": 8,
+      "def": 9,
+      "hp": 12,
+      "speed": 1.09
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -8,
+      "heal": 18,
+      "stamina": 15
+    }
+  },
+  {
+    "id": "item_64",
+    "name": "Item 64",
+    "type": "weapon",
+    "price": 181,
+    "req_level": 6,
+    "stats": {
+      "atk": 3,
+      "def": 6,
+      "hp": 17,
+      "speed": 1.07
+    },
+    "tags": [
+      "weapon",
+      "common"
+    ],
+    "recipe": {
+      "item_5": 2,
+      "item_6": 1
+    }
+  },
+  {
+    "id": "item_65",
+    "name": "Item 65",
+    "type": "weapon",
+    "price": 158,
+    "req_level": 1,
+    "stats": {
+      "atk": 11,
+      "def": 4,
+      "hp": 30,
+      "speed": 1.09
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_6": 2,
+      "item_7": 1
+    }
+  },
+  {
+    "id": "item_66",
+    "name": "Item 66",
+    "type": "consumable",
+    "price": 61,
+    "req_level": 4,
+    "stats": {
+      "atk": 12,
+      "def": 7,
+      "hp": 24,
+      "speed": 0.94
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -9,
+      "heal": 1,
+      "stamina": 3
+    }
+  },
+  {
+    "id": "item_67",
+    "name": "Item 67",
+    "type": "material",
+    "price": 141,
+    "req_level": 9,
+    "stats": {
+      "atk": 4,
+      "def": 1,
+      "hp": 17,
+      "speed": 1.18
+    },
+    "tags": [
+      "material",
+      "uncommon"
+    ],
+    "rarity": "ore"
+  },
+  {
+    "id": "item_68",
+    "name": "Item 68",
+    "type": "consumable",
+    "price": 16,
+    "req_level": 10,
+    "stats": {
+      "atk": 6,
+      "def": 8,
+      "hp": 20,
+      "speed": 0.99
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -8,
+      "heal": 7,
+      "stamina": 5
+    }
+  },
+  {
+    "id": "item_69",
+    "name": "Item 69",
+    "type": "mount",
+    "price": 167,
+    "req_level": 10,
+    "stats": {
+      "atk": 4,
+      "def": 1,
+      "hp": 23,
+      "speed": 0.96
+    },
+    "tags": [
+      "mount",
+      "uncommon"
+    ],
+    "mount_speed": 1.19
+  },
+  {
+    "id": "item_70",
+    "name": "Item 70",
+    "type": "mount",
+    "price": 47,
+    "req_level": 8,
+    "stats": {
+      "atk": 3,
+      "def": 11,
+      "hp": 30,
+      "speed": 1.13
+    },
+    "tags": [
+      "mount",
+      "common"
+    ],
+    "mount_speed": 1.22
+  },
+  {
+    "id": "item_71",
+    "name": "Item 71",
+    "type": "armor",
+    "price": 83,
+    "req_level": 8,
+    "stats": {
+      "atk": 12,
+      "def": 11,
+      "hp": 15,
+      "speed": 1.01
+    },
+    "tags": [
+      "armor",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_2": 2,
+      "item_13": 1
+    }
+  },
+  {
+    "id": "item_72",
+    "name": "Item 72",
+    "type": "consumable",
+    "price": 25,
+    "req_level": 4,
+    "stats": {
+      "atk": 9,
+      "def": 11,
+      "hp": 0,
+      "speed": 0.93
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -11,
+      "heal": 4,
+      "stamina": 9
+    }
+  },
+  {
+    "id": "item_73",
+    "name": "Item 73",
+    "type": "consumable",
+    "price": 200,
+    "req_level": 1,
+    "stats": {
+      "atk": 11,
+      "def": 5,
+      "hp": 18,
+      "speed": 0.92
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -8,
+      "heal": 12,
+      "stamina": 0
+    }
+  },
+  {
+    "id": "item_74",
+    "name": "Item 74",
+    "type": "potion",
+    "price": 174,
+    "req_level": 8,
+    "stats": {
+      "atk": 1,
+      "def": 7,
+      "hp": 10,
+      "speed": 1.16
+    },
+    "tags": [
+      "potion",
+      "common"
+    ],
+    "effect": {
+      "hunger": -9,
+      "heal": 16,
+      "stamina": 14
+    }
+  },
+  {
+    "id": "item_75",
+    "name": "Item 75",
+    "type": "weapon",
+    "price": 77,
+    "req_level": 5,
+    "stats": {
+      "atk": 0,
+      "def": 4,
+      "hp": 6,
+      "speed": 0.9
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_6": 2,
+      "item_2": 1
+    }
+  },
+  {
+    "id": "item_76",
+    "name": "Item 76",
+    "type": "potion",
+    "price": 106,
+    "req_level": 5,
+    "stats": {
+      "atk": 7,
+      "def": 8,
+      "hp": 0,
+      "speed": 1.08
+    },
+    "tags": [
+      "potion",
+      "common"
+    ],
+    "effect": {
+      "hunger": -5,
+      "heal": 2,
+      "stamina": 15
+    }
+  },
+  {
+    "id": "item_77",
+    "name": "Item 77",
+    "type": "weapon",
+    "price": 45,
+    "req_level": 10,
+    "stats": {
+      "atk": 7,
+      "def": 5,
+      "hp": 22,
+      "speed": 1.08
+    },
+    "tags": [
+      "weapon",
+      "uncommon"
+    ],
+    "recipe": {
+      "item_8": 2,
+      "item_4": 1
+    }
+  },
+  {
+    "id": "item_78",
+    "name": "Item 78",
+    "type": "shield",
+    "price": 67,
+    "req_level": 5,
+    "stats": {
+      "atk": 11,
+      "def": 5,
+      "hp": 8,
+      "speed": 1.1
+    },
+    "tags": [
+      "shield",
+      "common"
+    ],
+    "recipe": {
+      "item_9": 2,
+      "item_5": 1
+    }
+  },
+  {
+    "id": "item_79",
+    "name": "Item 79",
+    "type": "consumable",
+    "price": 11,
+    "req_level": 8,
+    "stats": {
+      "atk": 10,
+      "def": 3,
+      "hp": 1,
+      "speed": 1.06
+    },
+    "tags": [
+      "consumable",
+      "uncommon"
+    ],
+    "effect": {
+      "hunger": -5,
+      "heal": 8,
+      "stamina": 10
+    }
+  },
+  {
+    "id": "item_80",
+    "name": "Item 80",
+    "type": "consumable",
+    "price": 76,
+    "req_level": 10,
+    "stats": {
+      "atk": 6,
+      "def": 12,
+      "hp": 16,
+      "speed": 0.99
+    },
+    "tags": [
+      "consumable",
+      "common"
+    ],
+    "effect": {
+      "hunger": -7,
+      "heal": 11,
+      "stamina": 8
+    }
+  }
+]
