@@ -35,5 +35,5 @@ Edit JSON and restart the game to reload databases.
 
 ## Assets
 - Procedural in-engine gradient map generated at runtime by default.
-- `map.txt` placeholder marks where to drop your provided map image. Replace it with your own `map.png` (landscape-friendly) to show a custom map in-game. If `map.png` is missing, the gradient fallback stays active.
-- `icon.txt` placeholder indicates where to put your application icon. After replacing it with `icon.png` and pointing `config/icon` in `project.godot` to that path, Godot will use your image for window and export icons.
+- `map.txt` placeholder marks where to drop your provided map image. Replace it with your own `world_map.png` (landscape-friendly) to show a custom map in-game. If `map.png` is missing, the gradient fallback stays active.
+- `icon.txt` placeholder indicates where to put your application icon. After replacing it with `unnamed.jpg` and pointing `config/icon` in `project.godot` to that path, Godot will use your image for window and export icons.
