@@ -17,7 +17,6 @@ func _ready():
     GameState.connect("travel_started", Callable(self, "_on_travel_started"))
     GameState.connect("travel_arrived", Callable(self, "_on_travel_arrived"))
     _apply_placeholder_map_texture()
-    map_texture.resized.connect(_build_location_markers)
     _bind_buttons()
     _build_location_markers()
     _refresh_stats()
@@ -61,7 +60,6 @@ func _build_location_markers():
     for loc in LocationDB.all_locations():
         var btn = Button.new()
         btn.text = loc.get("name")
-        btn.custom_minimum_size = Vector2(96, 32)
         btn.size_flags_horizontal = 0
         btn.size_flags_vertical = 0
         btn.pressed.connect(func(id=loc.get("id")): GameState.enqueue_intent("travel", {"target": id}))
@@ -82,13 +80,12 @@ func _map_to_local(pos_array: Array) -> Vector2:
     return Vector2(x,y) - map_texture.global_position
 
 func _apply_placeholder_map_texture():
-    var map_candidates = ["res://world_map.png", "res://map.png"]
-    for map_path in map_candidates:
-        if ResourceLoader.exists(map_path, "Texture2D"):
-            var tex = ResourceLoader.load(map_path)
-            if tex is Texture2D:
-                map_texture.texture = tex
-                return
+    var map_path = "res://map.png"
+    if ResourceLoader.exists(map_path, "Texture2D"):
+        var tex = ResourceLoader.load(map_path)
+        if tex is Texture2D:
+            map_texture.texture = tex
+            return
     var gradient = Gradient.new()
     gradient.colors = PackedColorArray([
         Color(0.09, 0.15, 0.26),

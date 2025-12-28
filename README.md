@@ -34,6 +34,6 @@ Edit JSON and restart the game to reload databases.
 - Inventory/Log tabs: auto-update as actions occur.
 
 ## Assets
-- No binary art is bundled. On first run the map uses an in-engine gradient generated at runtime.
-- `map.txt` placeholder marks where to drop your provided map image. Place your own `world_map.png` (or `map.png`) beside it to show a custom map in-game. If neither file is present, the gradient fallback stays active.
-- `icon.txt` placeholder indicates where to put your application icon. Add your own image (for example `unarmed.jpg`) and set `config/icon` in `project.godot` to that path when you're ready to export.
+- Procedural in-engine gradient map generated at runtime by default.
+- `map.txt` placeholder marks where to drop your provided map image. Replace it with your own `map.png` (landscape-friendly) to show a custom map in-game. If `map.png` is missing, the gradient fallback stays active.
+- `icon.txt` placeholder indicates where to put your application icon. After replacing it with `icon.png` and pointing `config/icon` in `project.godot` to that path, Godot will use your image for window and export icons.
