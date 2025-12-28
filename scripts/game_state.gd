@@ -45,6 +45,35 @@ func _apply_trait_mods():
                 player["stats"][key] += mods[key]
         player["needs"]["mood"] = player.get("needs", {}).get("mood", 0) + mods.get("mood", 0)
 
+func _get_blessing_mods() -> Dictionary:
+    var mods := {
+        "atk": 0,
+        "def": 0,
+        "crit": 0.0,
+        "block": 0.0,
+        "speed_mult": 1.0,
+        "gold_mult": 1.0,
+        "xp_mult": 1.0,
+        "fatigue_mult": 1.0,
+        "travel_bonus": 0.0,
+        "craft_bonus": 0.0,
+        "mood_bonus": 0.0
+    }
+    for bless in player.get("active_blessings", []):
+        var data = bless.get("mods", {})
+        mods["atk"] += data.get("atk", 0)
+        mods["def"] += data.get("def", 0)
+        mods["crit"] += data.get("crit", 0.0)
+        mods["block"] += data.get("block", 0.0)
+        mods["speed_mult"] *= data.get("speed", 1.0)
+        mods["gold_mult"] *= data.get("gold_mult", 1.0)
+        mods["xp_mult"] *= data.get("xp_mult", 1.0)
+        mods["fatigue_mult"] *= data.get("fatigue_mult", 1.0)
+        mods["travel_bonus"] += data.get("travel_bonus", 0.0)
+        mods["craft_bonus"] += data.get("craft_bonus", 0.0)
+        mods["mood_bonus"] += data.get("mood", 0.0)
+    return mods
+
 func set_time_scale(scale: float):
     time_scale = scale
 
@@ -72,6 +101,7 @@ func _tick_one_second():
         _autopilot_choose_action()
 
 func _update_needs():
+    var blessing_mods = _get_blessing_mods()
     var hunger_increase = 0.05 * _need_multiplier("hunger")
     var fatigue_increase = 0.04 * _need_multiplier("fatigue")
     player["needs"]["hunger"] = clamp(player.get("needs", {}).get("hunger", 0.0) + hunger_increase, 0.0, 100.0)
@@ -79,7 +109,7 @@ func _update_needs():
     player["needs"]["stamina"] = clamp(player.get("needs", {}).get("stamina", 0.0) - 0.3, 0.0, 100.0)
     if player.get("needs", {}).get("stamina", 0.0) <= 0:
         player["needs"]["hp"] = max(1.0, player.get("needs", {}).get("hp", 0.0) - 0.5)
-    player["needs"]["mood"] = clamp(player.get("needs", {}).get("mood", 0.0) - (player.get("needs", {}).get("hunger",0.0)/200.0) - (player.get("needs", {}).get("fatigue",0.0)/200.0) + 0.01, -10, 20)
+    player["needs"]["mood"] = clamp(player.get("needs", {}).get("mood", 0.0) - (player.get("needs", {}).get("hunger",0.0)/200.0) - (player.get("needs", {}).get("fatigue",0.0)/200.0) + 0.01 + blessing_mods.get("mood_bonus", 0.0), -10, 20)
     if player.get("needs", {}).get("hp",0.0) < player.get("stats", {}).get("max_hp", 0):
         player["needs"]["hp"] = clamp(player.get("needs", {}).get("hp",0.0) + 0.05, 0.0, player.get("stats", {}).get("max_hp", 0))
     emit_signal("stats_updated")
@@ -89,6 +119,8 @@ func _need_multiplier(kind: String) -> float:
     for trait_id in player.get("traits", []):
         var t = TraitDB.get_trait(trait_id)
         mult *= t.get("mods", {}).get(kind+"_mult", 1.0)
+    for bless in player.get("active_blessings", []):
+        mult *= bless.get("mods", {}).get(kind+"_mult", 1.0)
     return max(mult, 0.1)
 
 func _process_blessings():
@@ -101,6 +133,9 @@ func _process_travel():
     var speed_mult = player.get("stats", {}).get("speed", 1.0)
     for trait_id in player.get("traits", []):
         speed_mult *= TraitDB.get_trait(trait_id).get("mods",{}).get("speed",1.0)
+    var blessing_mods = _get_blessing_mods()
+    speed_mult *= blessing_mods.get("speed_mult", 1.0)
+    speed_mult *= 1.0 + blessing_mods.get("travel_bonus", 0.0)
     for item in player.get("inventory", []):
         if item.get("type","") == "mount":
             speed_mult *= item.get("mount_speed",1.0)
@@ -108,7 +143,7 @@ func _process_travel():
     var hunger_penalty = 1.0 - (player.get("needs", {}).get("hunger",0.0)/200.0)
     speed_mult *= max(0.5, fatigue_penalty*hunger_penalty)
     if _roll_random_event():
-        player["gold"] = player.get("gold",0) + 2
+        player["gold"] = player.get("gold",0) + int(2 * blessing_mods.get("gold_mult", 1.0))
         add_to_log("Found coins while traveling.")
     if travel_elapsed * speed_mult >= travel_time:
         current_location_id = target_location_id
@@ -225,26 +260,30 @@ func _do_heal():
 
 func _do_hunt():
     var reward = 8 + randi()%6
+    var blessing_mods = _get_blessing_mods()
+    reward = int(reward * blessing_mods.get("gold_mult", 1.0))
     player["gold"] = player.get("gold",0) + reward
     player["needs"]["stamina"] = max(0.0, player.get("needs", {}).get("stamina",0.0) - 10)
-    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 8
+    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 8 * blessing_mods.get("fatigue_mult", 1.0)
     add_to_log("Hunted creatures, earned %d gold." % reward)
 
 func _do_gather():
+    var blessing_mods = _get_blessing_mods()
     var reward = ItemDB.random_item_by_type("material")
     if not reward.is_empty():
         player.get("inventory", []).append(reward)
         emit_signal("inventory_updated")
         add_to_log("Gathered %s." % reward.get("name"))
-    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 6
+    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 6 * blessing_mods.get("fatigue_mult", 1.0)
 
 func _do_mine():
+    var blessing_mods = _get_blessing_mods()
     var reward = ItemDB.random_item_by_type("material")
     if not reward.is_empty():
         player.get("inventory", []).append(reward)
         emit_signal("inventory_updated")
         add_to_log("Mined ore %s." % reward.get("name"))
-    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 8
+    player["needs"]["fatigue"] = player.get("needs", {}).get("fatigue",0.0) + 8 * blessing_mods.get("fatigue_mult", 1.0)
 
 func _do_shop():
     var city = LocationDB.get_location(current_location_id)
@@ -270,10 +309,12 @@ func _do_shop():
         add_to_log("Not enough gold to shop.")
 
 func _do_craft():
+    var blessing_mods = _get_blessing_mods()
     if player.get("inventory", []).size() < 2:
         add_to_log("No materials to craft.")
         return
-    var success = randf() > 0.2
+    var failure_chance = max(0.0, 0.2 - blessing_mods.get("craft_bonus", 0.0))
+    var success = randf() > failure_chance
     for t in player.get("traits", []):
         if TraitDB.get_trait(t).get("behavior",{}).get("craft_bias","") == "material":
             success = randf() > 0.1
@@ -291,7 +332,9 @@ func _do_craft():
             player.get("inventory", []).pop_front()
 
 func _do_quest():
+    var blessing_mods = _get_blessing_mods()
     var xp_gain = 10 + randi()%10
+    xp_gain = int(round(xp_gain * blessing_mods.get("xp_mult", 1.0)))
     player["xp"] = player.get("xp",0) + xp_gain
     add_to_log("Completed a minor quest for %d XP." % xp_gain)
     if player.get("xp",0) > player.get("level",1) * 50:
