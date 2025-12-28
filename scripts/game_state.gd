@@ -125,8 +125,8 @@ func _need_multiplier(kind: String) -> float:
 
 func _process_blessings():
     for b in player.get("active_blessings", []):
-        b.duration -= 1
-    player["active_blessings"] = player.get("active_blessings", []).filter(func(b): return b.duration > 0)
+        b["duration"] = b.get("duration", 0) - 1
+    player["active_blessings"] = player.get("active_blessings", []).filter(func(b): return b.get("duration", 0) > 0)
 
 func _process_travel():
     travel_elapsed += 1.0
@@ -353,7 +353,7 @@ func _do_blessing(id: String):
         return
     player["divine_power"] = player.get("divine_power",0) - cost
     var data = bless.duplicate(true)
-    data.duration = bless.get("duration",60)
+    data["duration"] = bless.get("duration",60)
     player.get("active_blessings", []).append(data)
     add_to_log("Invoked %s blessing." % bless.get("name"))
 
