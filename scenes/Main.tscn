@@ -20,10 +20,10 @@ offset_left = 16.0
 offset_top = 16.0
 offset_right = -16.0
 offset_bottom = -16.0
-custom_constants/margin_left = 10
-custom_constants/margin_top = 10
-custom_constants/margin_right = 10
-custom_constants/margin_bottom = 10
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
 
 [node name="HSplit" type="HSplitContainer" parent="Margin"]
 layout_mode = 2
