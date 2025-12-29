@@ -27,7 +27,8 @@ func _ready():
 func _process(delta):
     GameState.process_tick(delta)
     _update_avatar_position()
-    time_label.text = "Intent: %d | Mood %.1f" % [GameState.intent_queue.size(), GameState.player.needs.get("mood",0.0)]
+    var needs := GameState.player.get("needs", {})
+    time_label.text = "Intent: %d | Mood %.1f" % [GameState.intent_queue.size(), needs.get("mood",0.0)]
 
 func _bind_buttons():
     $Margin/HSplit/RightPanel/VBox/TimeBar/Play.pressed.connect(func(): GameState.set_time_scale(1.0))
@@ -35,14 +36,14 @@ func _bind_buttons():
     $Margin/HSplit/RightPanel/VBox/TimeBar/Quad.pressed.connect(func(): GameState.set_time_scale(4.0))
     $Margin/HSplit/RightPanel/VBox/TimeBar/Pause.pressed.connect(func(): GameState.set_time_scale(0.0))
     var cmd_root = $Margin/HSplit/RightPanel/VBox/Tabs/Command/CommandButtons
-    cmd_root/TravelBtn.pressed.connect(_queue_travel)
-    cmd_root/HuntBtn.pressed.connect(func(): GameState.enqueue_intent("hunt"))
-    cmd_root/GatherBtn.pressed.connect(func(): GameState.enqueue_intent("gather"))
-    cmd_root/MineBtn.pressed.connect(func(): GameState.enqueue_intent("mine"))
-    cmd_root/RestBtn.pressed.connect(func(): GameState.enqueue_intent("rest"))
-    cmd_root/CraftBtn.pressed.connect(func(): GameState.enqueue_intent("craft"))
-    cmd_root/ShopBtn.pressed.connect(func(): GameState.enqueue_intent("shop"))
-    cmd_root/QuestBtn.pressed.connect(func(): GameState.enqueue_intent("quest"))
+    cmd_root.get_node("TravelBtn").pressed.connect(_queue_travel)
+    cmd_root.get_node("HuntBtn").pressed.connect(func(): GameState.enqueue_intent("hunt"))
+    cmd_root.get_node("GatherBtn").pressed.connect(func(): GameState.enqueue_intent("gather"))
+    cmd_root.get_node("MineBtn").pressed.connect(func(): GameState.enqueue_intent("mine"))
+    cmd_root.get_node("RestBtn").pressed.connect(func(): GameState.enqueue_intent("rest"))
+    cmd_root.get_node("CraftBtn").pressed.connect(func(): GameState.enqueue_intent("craft"))
+    cmd_root.get_node("ShopBtn").pressed.connect(func(): GameState.enqueue_intent("shop"))
+    cmd_root.get_node("QuestBtn").pressed.connect(func(): GameState.enqueue_intent("quest"))
     $Margin/HSplit/RightPanel/VBox/Footer/SaveBtn.pressed.connect(GameState.save_game)
     $Margin/HSplit/RightPanel/VBox/Footer/LoadBtn.pressed.connect(GameState.load_game)
     $Margin/HSplit/RightPanel/VBox/Footer/BlessingBtn.pressed.connect(func(): GameState.enqueue_intent("blessing", {"id": "fortune"}))
@@ -102,7 +103,7 @@ func _apply_placeholder_map_texture():
 
 func _refresh_inventory():
     inventory_list.clear()
-    for item in GameState.player.inventory:
+    for item in GameState.player.get("inventory", []):
         inventory_list.add_item("%s (%s)" % [item.get("name"), item.get("type")])
 
 func _refresh_stats():
